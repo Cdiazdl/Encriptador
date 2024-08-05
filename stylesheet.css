@@ -30,3 +30,18 @@ main{
     outline: none;
  }
   
+.TextAreaSecundaria{
+    background: white;
+    background-image: url("IMG/Muñeco.png");
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0a3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+    .TextAreaSecundario:focus {
+        outline: none;
+    }
+}
