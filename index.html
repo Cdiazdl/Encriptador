@@ -3,39 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet2.css">
+    <link rel="stylesheet" href="stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+IT+Moderna&display=swap" rel="stylesheet">
-    <title>Encriptador</title>
+    <title>Encriptador de texto</title>
 </head>
 <body>
     <header>
-        <img class="logo" src="IMG/Frame 6.png" alt="logo"> 
+        <img class="logo" src="IMG/logo.png" alt="logo"> 
     </header>
-    <main>
-     <section>
-        <div class="contenido__mensaje">
-            <textarea cols="30" rows="10" class="ingreso__mensaje" placeholder="Ingrese Texto"></textarea>
-        <div class="contenido__informacion">
-            <h6 class="informacion__mensaje"><img class="informacion__img" src="IMG/bi_exclamation-circle-fill.png" alt="Alerta">Solo letras en minuscula y sin acento</h6>           
-        </div>
-        <div class="contenido__botones">
-            <button class="boton__encriptar">Encriptar</button>
-            <button class="boton__descriptar">Desencriptar</button>
-        </div>
-     </section> 
-        <div class="contenido__descripcion">
-        <div class="contenido__descripcion__observaciones">
-            <h3>Ningún mensaje fue encontrado</h3>
-            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-        </div>
-    </div>
-        <div>  
-            <button class="boton__copiar">Copiar</button>
-        </div>     
-    </div>
+    <main> 
+       <section class="contenido__mensaje">
+            <div class="ingreso__mensaje">
+                <textarea cols="30" rows="10"  placeholder="Ingrese Texto"></textarea>
+            </div>
+            <div class="contenido__informacion">
+                <h6 class="informacion__mensaje">
+                    <img class="informacion__img" src="IMG/exclamation.png" alt="Alerta"
+                    >Solo letras en minuscula y sin acento
+                </h6>           
+            </div>
+            <div class="contenido__botones">
+                <button class="boton__encriptar" type="button" onclick="encriptar()">
+                    Encriptar
+                </button>
+                <button class="boton__descriptar" type="button" onclick="desencriptar()">
+                    Desencriptar
+                </button>
+            </div>
+        </section>         
+        <section class="contenido__descripcion">
+            <div class="contenido__descripcion__observaciones">
+                <img src="IMG/Muñeco.png" id="Muñeco">
+            </div>    
+            <div class="mensaje__encriptado">    
+                <h3 class="titulo__mensaje__encriptado">Ningún mensaje fue encontrado</h3>               
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                <textarea name="mensaje" class="mensaje" cols="30" rows="10"></textarea>
+            </div> 
+            <div>
+                <button class="boton__copiar" type="button" onclick="copiar()">Copiar</button>
+            </div>  
+        </section>  
+    
     </main>
 
 </body>
+<script src="app.js"></script>
 </html>
