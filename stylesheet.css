@@ -1,0 +1,40 @@
+import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+ --gris: #D8DFE8;
+ --txtcolor: #0A3871;
+ --gris400: #495057;
+ --blanco: #f3f5fc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-color: white;
+    color: var(--txtcolor);
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.contenido__mensaje {
+    position: relative;
+    width: 100vh;
+    height: 100vh;
+    background: var(--blanco);
+}
+
+.cuandro__mensaje {
+    position: absolute;
+    width: 42%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    font-style: normal;
+    font-size: 32px;
+    line-height 150%;
+    background-color: #D8DFE8;
+}
